@@ -15,5 +15,12 @@ class TestHelloWorld(unittest.TestCase):
         greeting = 'Welcome to CI/CD'
         self.assertEqual(hello_world.greet(), greeting)
 
+
+    def test_author_message(self):
+        author = 'frank'
+        self.assertEqual(hello_world.get_author(), author)
+
+
+
 if __name__ == '__main__':
     unittest.main()

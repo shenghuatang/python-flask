@@ -1,6 +1,10 @@
 from flask import Flask
 
 app = Flask(__name__)
+author="frank"
+
+def get_author():
+    return author
 
 def generate_html(message):
     version_number = '0001'
